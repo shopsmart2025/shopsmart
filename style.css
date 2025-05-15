@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1240px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn1{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn1:hover{
+    background: #563434;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.header .row{
+    margin-top: 60px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-height: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title1{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    margin-bottom: 60px;
+    /* border-bottom: 3px solid #ff523b; */
+}
+
+.title1::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-4 h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4 img{
+    border-radius: 20px;
+}
+
+.rating{
+    color: #ff523b;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info1 p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.col-4:hover{
+    transform: translateY(-7px);
+}
+
+.milestone_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.milestone_img img{
+    width: 500px;
+}
+
+.nav1{
+    text-align: center;
+    margin-bottom: 90px;
+    padding: 10px;
+    color: #555;
+}
+
+.nav2{
+    border-bottom: 2px solid #ff523b;
+}
+
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 10px;
+    padding: 30px 0px
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+small{
+    color: #555;
+}
+
+.testimonial{
+    padding-top: 100px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+#quoteleft{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+#sp1{
+    margin-top: 50px;
+}
+
+.brands{
+    margin: 50px auto;
+}
+
+.col-4{
+    width: 160px;
+}
+
+.col-4{
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 120px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #555;
+    color: #fff;
+    width: 100%;
+    position: relative;
+  }
+
+  #sp3{
+    color: #fff;
+  }
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 190px;
+}
+
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+#sp-a, #sp-b, #sp-c, #sp-d{
+    width: 200px;
+}
+
+
+/* ---------- SINGLE PRODUCT DETAILS ----------- */
+
+.single-product{
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product .col-2 .h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-product .fa-solid{
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.insta, .twitter{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.insta{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.insta img{
+    width: 100px;
+}
+
+.twitter{
+    margin-top: 110px;
+    margin-bottom: 190px;
+}
+
+.twitter img{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------- Media Query For Menu ---------------- */
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .milestone_img img{
+        width: 400px;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    .row{
+        text-align: center;
+    }
+
+    #anu1{
+        margin-top: 120px;
+    }
+    
+    #anu2{
+        margin-top: 120px;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+    .milestone_img img{
+        width: 300px;
+    }
+
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+}
+
+
+/* 
+@media only screen and (max-width: 320px){
+    .milestone_img img{
+        width: 200px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 0.9rem;
+    }
+  }
